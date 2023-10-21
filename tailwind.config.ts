@@ -10,10 +10,17 @@ const config: Config = {
     extend: {
       fontFamily:{Montserrat :['Montserrat', 'sans-serif']}, 
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'linear-gradient': 'linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))',
+        
       },
+      colors:{
+        veryLightGray: "hsl(240, 78%, 98%)",
+    lightGray: "hsl(234, 14%, 74%)",
+    grayish: "hsl(233, 13%, 49%)",
+    darkGray: "hsl(232, 13%, 33%)",
+    lightblue:"hsl(236, 72%, 79%)",
+    darkblue:"hsl(237,63%,64%)",
+      }
     },
   },
   plugins: [],
