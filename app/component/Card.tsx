@@ -17,7 +17,7 @@ type CardType = {
 
 export default function Card(props: CardType) {
     return (
-        <div className={cn(`flex flex-col h-[90%] w-72  rounded-md p-6 items-center justify-between bg-veryLightGray text-grayish `, props.className)}>
+        <div className={cn(`flex flex-col h-[90%] w-[230px]  rounded-md p-6 items-center justify-between bg-veryLightGray text-grayish `, props.className)}>
             <p className="">{props.title}
             </p>
             <p className={cn(`text-5xl text-darkGray `, props.priceClassName)}>{props.price}</p>

@@ -30,10 +30,10 @@ export default function Home() {
 
 
     <div className="h-screen w-full bg-[hsl(236,15%,82%)] text-[15px] font-Montserrat justify-center items-center flex flex-col gap-6 relative">
-      <Image className='fixed right-0 top-0 w-60 z-0 fill-black' src={'/bg-top.svg'} alt={''} width={50} height={50} />
-      <Image className='fixed left-0 bottom-0 w-60 z-0' bg-black src={'/bg-bottom.svg'} alt={''} width={50} height={50} />
-      <div className=" flex flex-col justify-center items-center gap-6 text-grayish">
-        <h2 className='text-3xl'>Our Pricing</h2>
+      <Image className='fixed right-0 top-0 w-[230px] z-0 fill-black' src={'/bg-top.svg'} alt={''} width={50} height={50} />
+      <Image className='fixed left-0 bottom-0 w-[220px] z-0' bg-black src={'/bg-bottom.svg'} alt={''} width={50} height={50} />
+      <div className=" flex flex-col justify-center items-center gap-6 text-grayish text-sm">
+        <h2 className='text-2xl text-darkGray'>Our Pricing</h2>
         <div className="flex gap-2">
           <p className="">Annually</p>
 
@@ -45,21 +45,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex justify-center items-center z-10">
+      <div className="flex justify-center items-center z-10 text-sm">
         {/* 
         {mapedUi} */}
 
         <Card className={'  rounded-r-none '} buttoClassName={''} title={'Basic'} price={priceCategory === 'annualy' ?
-          '19.00' : '199.99'} storages={''} users={0} senddata={0} priceClassName={''} />
+          '19.00' : '199.99'} storages={'500 GB'} users={2} senddata={3} priceClassName={''} />
 
 
-        <Card className=' bg-linear-gradient text-white h-[440px] w-[300px] ' buttoClassName='bg-white hover:bg-darkblue  hover:outline-white text-darkblue  hover:text-white' title={'Professional'}
+        <Card className='bg-linear-gradient text-white h-[340px] w-[250px] py-[44px]' buttoClassName='bg-white hover:bg-darkblue  hover:outline-white text-darkblue  hover:text-white' title={'Professional'}
 
           price={priceCategory === 'annualy' ?
-            '24.99' : '249.99'} storages={''} users={0} senddata={0} priceClassName={'text-white'} />
+            '24.99' : '249.99'} storages={'1 TB'} users={5} senddata={10} priceClassName={'text-white'} />
 
         <Card className={' rounded-l-none'} buttoClassName={''} title={'Master'} price={priceCategory === 'annualy' ?
-          '39.00' : '399.99'} storages={''} users={0} senddata={0} priceClassName={''} />
+          '39.00' : '399.99'} storages={'2 TB'} users={10} senddata={20} priceClassName={''} />
       </div>
     </div>
   )
