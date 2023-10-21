@@ -4,7 +4,7 @@ import { cn } from '../cn'
 type CardType = {
 
     className: string
-    buttoClassName: string
+    buttonClassName: string
     title: string
     price: number | string
     storages: string
@@ -17,7 +17,7 @@ type CardType = {
 
 export default function Card(props: CardType) {
     return (
-        <div className={cn(`flex flex-col h-[90%] w-[230px]  rounded-md p-6 items-center justify-between bg-veryLightGray text-grayish `, props.className)}>
+        <div className={cn(`flex flex-col  w-[230px] h-[300px]  rounded-md p-6 items-center justify-between bg-veryLightGray text-grayish `, props.className)}>
             <p className="">{props.title}
             </p>
             <p className={cn(`text-5xl text-darkGray `, props.priceClassName)}>{props.price}</p>
@@ -29,7 +29,7 @@ export default function Card(props: CardType) {
             <p className="">Send up to {props.senddata} GB</p>
             <hr className='bg-lightGray h-[1.5px] w-full' />
 
-            <button className={cn(` text-white w-full rounded-md hover:outline bg-linear-gradient hover:bg-white-gradient  hover:outline-darkblue hover:text-darkblue p-2 `, props.buttoClassName)}>Learn More</button>
+            <button className={cn(` text-white w-full rounded-md hover:outline bg-linear-gradient hover:bg-white-gradient  hover:outline-darkblue hover:text-darkblue p-2 `, props.buttonClassName)}>Learn More</button>
         </div>
     )
 }

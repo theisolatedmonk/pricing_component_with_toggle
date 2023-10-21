@@ -25,42 +25,49 @@ export default function Home() {
 
   // console.log('pricing-', Pricing.map((d) => d.Pricing))
 
-  // const mapedUi = Pricing.map((d) => <Card className={'  rounded-r-none '} buttoClassName={''} title={''} price={d.Price.Annually} storages={''} users={0} senddata={0} />)
+  // const mapedUi = Pricing.map((d) => <Card className={'  rounded-r-none '} buttonClassName={''} title={''} price={d.Price.Annually} storages={''} users={0} senddata={0} />)
   return (
 
+    <>
+      <div className="min-h-screen w-full  text-[15px] font-Montserrat justify-center items-center flex flex-col gap-6 p-4">
 
-    <div className="h-screen w-full bg-[hsl(236,15%,82%)] text-[15px] font-Montserrat justify-center items-center flex flex-col gap-6 relative">
-      <Image className='fixed right-0 top-0 w-[230px] z-0 fill-black' src={'/bg-top.svg'} alt={''} width={50} height={50} />
-      <Image className='fixed left-0 bottom-0 w-[220px] z-0' bg-black src={'/bg-bottom.svg'} alt={''} width={50} height={50} />
-      <div className=" flex flex-col justify-center items-center gap-6 text-grayish text-sm">
-        <h2 className='text-2xl text-darkGray'>Our Pricing</h2>
-        <div className="flex gap-2">
-          <p className="">Annually</p>
-
-
-          <Switch onClick={togglewitch} isOpen={priceCategory === 'monthly'} />
+        <div className=" flex  flex-col justify-center items-center gap-6 text-grayish text-sm">
+          <h2 className='text-2xl text-darkGray'>Our Pricing</h2>
+          <div className="flex gap-2">
+            <p className="">Annually</p>
 
 
-          <p className="bg-none ">Monthly</p>
+            <Switch onClick={togglewitch} isOpen={priceCategory === 'monthly'} />
+
+
+            <p className="bg-none ">Monthly</p>
+          </div>
         </div>
-      </div>
 
-      <div className="flex justify-center items-center z-10 text-sm">
-        {/* 
+        <div className="flex  sm:flex-row flex-col justify-center items-center z-10 text-sm gap-5 sm:gap-0">
+          {/* 
         {mapedUi} */}
 
-        <Card className={'  rounded-r-none '} buttoClassName={''} title={'Basic'} price={priceCategory === 'annualy' ?
-          '19.00' : '199.99'} storages={'500 GB'} users={2} senddata={3} priceClassName={''} />
+          <Card className={'  sm:rounded-r-none '} buttonClassName={'hover:bg-whiteImage'} title={'Basic'} price={priceCategory === 'annualy' ?
+            '19.00' : '199.99'} storages={'500 GB'} users={2} senddata={3} priceClassName={''} />
 
 
-        <Card className='bg-linear-gradient text-white h-[340px] w-[250px] py-[44px]' buttoClassName='bg-white hover:bg-darkblue  hover:outline-white text-darkblue  hover:text-white' title={'Professional'}
+          <Card className='bg-linear-gradient text-white sm:h-[340px] sm:w-[250px] w-[230px] py-[44px]' buttonClassName='bg-white hover:bg-darkblue  hover:outline-white text-darkblue  hover:text-white' title={'Professional'}
 
-          price={priceCategory === 'annualy' ?
-            '24.99' : '249.99'} storages={'1 TB'} users={5} senddata={10} priceClassName={'text-white'} />
+            price={priceCategory === 'annualy' ?
+              '24.99' : '249.99'} storages={'1 TB'} users={5} senddata={10} priceClassName={'text-white'} />
 
-        <Card className={' rounded-l-none'} buttoClassName={''} title={'Master'} price={priceCategory === 'annualy' ?
-          '39.00' : '399.99'} storages={'2 TB'} users={10} senddata={20} priceClassName={''} />
+          <Card className={'sm:rounded-l-none'} buttonClassName={'hover:bg-whiteImage'} title={'Master'} price={priceCategory === 'annualy' ?
+            '39.00' : '399.99'} storages={'2 TB'} users={10} senddata={20} priceClassName={''} />
+        </div>
       </div>
-    </div>
+      <div className='fixed min-h-screen left-0 top-0 w-full bg-gray-300  -z-10' />
+      <Image className=' fixed right-0 top-0 w-[230px]  fill-black' src={'/bg-top.svg'} alt={''} width={50} height={50} />
+      <Image className='fixed  left-0 bottom-0 w-[220px] z' bg-black src={'/bg-bottom.svg'} alt={''} width={50} height={50} />
+
+
+
+
+    </>
   )
 }

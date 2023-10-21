@@ -11,7 +11,7 @@ const config: Config = {
       fontFamily:{Montserrat :['Montserrat', 'sans-serif']}, 
       backgroundImage: {
         'linear-gradient': 'linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))',
-        'white-gradient': 'linear-gradient(to  right, hsl(240, 78%, 98%), hslhsl(240, 78%, 98%))',
+        'whiteImage':'linear-gradient(to bottom right,hsl(240, 78%, 98%), hsl(240, 78%, 98%))',
         
       },
       colors:{
@@ -24,6 +24,7 @@ const config: Config = {
       }
     },
   },
+ 
   plugins: [],
 }
 export default config
