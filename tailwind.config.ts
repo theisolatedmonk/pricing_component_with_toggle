@@ -10,7 +10,8 @@ const config: Config = {
     extend: {
       fontFamily:{Montserrat :['Montserrat', 'sans-serif']}, 
       backgroundImage: {
-        'linear-gradient': 'linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))',
+        'linear-gradient': 'linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%))',
+        'white-gradient': 'linear-gradient(to  right, hsl(240, 78%, 98%), hslhsl(240, 78%, 98%))',
         
       },
       colors:{
